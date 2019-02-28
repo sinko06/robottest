@@ -48,6 +48,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         getPermission();
 
+        // 전역변수를 초기화하는 구문
         GlobalVariable.DIRECTORY_NAME = Environment.getExternalStorageDirectory().getAbsolutePath() + "/WonderfullRecord";
         GlobalVariable.IDByANDROID = Settings.Secure.getString(this.getContentResolver(), Settings.Secure.ANDROID_ID);
         File readFile = new File(GlobalVariable.DIRECTORY_NAME + "/opponent.txt");
@@ -70,6 +71,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         fab1.setOnClickListener(this);
         fab2.setOnClickListener(this);
 
+        // 자신이 받은 파일과 보낸 파일을 가져오는 구문
         try {
             File dir = new File(GlobalVariable.DIRECTORY_NAME);
             if (!dir.exists()){
