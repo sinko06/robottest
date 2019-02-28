@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+
+    <item
+        name="앱스토어"
+        iconPath="com.onethefull.appstore.png"
+        packagename="com.onethefull.appstore"
+        sceneName="APPSTORE">
+
+        <data
+            key="packagename"
+            value="com.onethefull.appstore" />
+    </item>
+
+    <item
+        name="영어연습"
+        iconPath="com.roobo.englishchat.png"
+        packagename="com.roobo.englishchat"
+        sceneName="ENGLISH_CHAT" />
+
+    <item
+        name="갤러리"
+        iconPath="com.roobo.gallery.png"
+        packagename="com.roobo.gallery"
+        sceneName="GALLERY" />
+
+    <item
+        name="리듬게임"
+        iconPath="com.roobo.touch.png"
+        packagename="com.roobo.touch"
+        sceneName="RHYTHM" />
+
+    <item
+        name="카메라"
+        iconPath="com.roobo.roobocamera.png"
+        packagename="com.roobo.roobocamera"
+        sceneName="ROOBOCAMERA" />
+
+    <item
+        name="Youtube Link"
+        iconPath="com.onethefull.webviewscene.png"
+        packagename="com.onethefull.webviewscene"
+        sceneName="Youtube" />
+
+    <item
+        name="RecordTest"
+        iconPath="com.onethefull.webviewscene.png"
+        packagename="com.example.a1thefull.robottest"
+        sceneName="Hello_Roobo" />
+
+    <item
+        name="알람"
+        iconPath="com.onethefull.walarm.png"
+        packagename="com.onethefull.walarm"
+        sceneName="Alarm" />
+</menu>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstFragment">
+
+    <Button
+        android:id="@+id/voicemail_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        android:text="@string/back_button"
+        android:textSize="20dp" />
+
+    <RelativeLayout
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/voicemail_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="보이스 메일"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/voicemail_rec"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/voicemail_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/rec_basic" />
+
+        <TextView
+            android:id="@+id/voicemail_explain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/voicemail_rec"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="버튼을 눌러 녹음을 시작하세요" />
+
+        <Button
+            android:id="@+id/voicemail_send"
+            android:layout_width="135dp"
+            android:layout_height="27dp"
+            android:layout_alignTop="@+id/voicemail_rec"
+            android:layout_alignBottom="@+id/voicemail_rec"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginVertical="20dp"
+            android:layout_toEndOf="@+id/voicemail_rec"
+            android:layout_toRightOf="@+id/voicemail_rec"
+            android:background="@drawable/button_btn01"
+            android:text="메세지 보내기" />
+
+        <Button
+            android:id="@+id/voicemail_send2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/voicemail_explain"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_btn01"
+            android:text="메세지 보내기"
+            android:padding="10dp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
